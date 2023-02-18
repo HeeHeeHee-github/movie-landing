@@ -19,7 +19,6 @@ header {
   position: relative;
   z-index: 999;
   width: 100%;
-  border-bottom: 1px solid #2a2a2a;
   justify-content: space-between;
   align-items: center;
   padding: 5vh 5vw;
@@ -99,7 +98,7 @@ figure .text strong {
 }
 figure p {
   font: normal 8vw/1 "Caveat Brush";
-  color: #eee;
+  color: rgba(238, 238, 238, 0.6392156863);
 }
 
 footer {

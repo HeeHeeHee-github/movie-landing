@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Coming+Soon&family=Dokdo&family=East+Sea+Dokdo&family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: lightblue;
+}
+
+header {
+  display: flex;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  border-bottom: 1px solid #2a2a2a;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+header #snb {
+  display: none;
+}
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0px 35px;
+}
+header #gnb li a {
+  font: bold italic 23px/1 "Caveat Brush";
+  color: #3a3636;
+  letter-spacing: 2.5px;
+}
+header h1 a {
+  font: bold 50px/50px "Dokdo";
+  color: #3a3636;
+}
+header .btn_menu {
+  display: none;
+  color: #3a3636;
+  font-size: 20px;
+}
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0px 28px;
+  font-size: 20px;
+}
+header .sns li a {
+  font: 30px/50px;
+  color: #3a3636;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+figure .text {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+figure .text ul {
+  display: flex;
+  margin-top: 30px;
+}
+figure .text li {
+  margin: 0px 30px;
+}
+figure .text i {
+  font-size: 20px;
+  color: #eee;
+  margin-right: 10px;
+}
+figure .text strong {
+  font: italic 19px/1 "Caveat Brush";
+  color: #292929;
+  letter-spacing: 1px;
+}
+figure p {
+  font: normal 8vw/1 "Caveat Brush";
+  color: #eee;
+}
+
+footer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font: 12px/1 "Dokdo";
+  letter-spacing: 2px;
+  color: #faeffc;
+  padding: 5vh 0;
+}
+
+@media screen and (max-width: 968px) {
+  header {
+    border: none;
+  }
+  header #snb {
+    display: block;
+  }
+  header #snb .sub_menu {
+    position: absolute;
+    right: 5vw;
+    border: 1px solid #3a3636;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px 25px;
+    transition: 0.4s;
+  }
+  header #snb .sub_menu.hide {
+    opacity: 0;
+  }
+  header #snb .sub_menu li {
+    padding: 10px 0px;
+    font: 18px/1 "Caveat Brush";
+  }
+  header #snb .sub_menu li a {
+    color: #2a2a2a;
+  }
+  header #snb .sub_menu li a i {
+    margin-left: 8px;
+  }
+  header #gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .btn_menu {
+    display: block;
+  }
+  figure .text {
+    top: 50%;
+  }
+  figure .text p {
+    font-size: 15vw;
+  }
+}/*# sourceMappingURL=style.css.map */
